@@ -10,8 +10,8 @@ export default function LoginPage() {
   useEffect(() => {
     const { createClient } = require('@supabase/supabase-js')
     const client = createClient(
-      process.env.NEXT_PUBLIC_SUPABASE_URL,
-      process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
+      'https://ptmulkpvzbtyciartllf.supabase.co',
+      'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InB0bXVsa3B2emJ0eWNpYXJ0bGxmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzgzNTQ4NzAsImV4cCI6MjA5MzkzMDg3MH0.HQ9bi4GXGr3zua-eZLQy4CMCzJ5ABxU3o07yAdYpZ70'
     )
     setSupabase(client)
   }, [])
